@@ -7,7 +7,7 @@ import {
   singlePostApi,
   updateCommentApi,
   userPostsApi,
-} from "../services/PostsApi";
+} from "../services/postsApi";
 
 export function createdAt(time) {
   const date = new Date(time);
