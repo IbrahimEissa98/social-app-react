@@ -10,7 +10,7 @@ import {
 import CreatePost from "./CreatePost";
 import PostHeader from "./postComponents/PostHeader";
 import { userContext } from "../contexts/UserContext";
-import { createPost } from "../services/PostsApi";
+import { createPost } from "../services/postsApi";
 import * as zod from "zod";
 import { useForm } from "react-hook-form";
 

@@ -11,7 +11,7 @@ import {
 } from "@heroui/react";
 import CreatePost from "./CreatePost";
 import PostHeader from "./postComponents/PostHeader";
-import { createPost } from "../services/PostsApi";
+import { createPost } from "../services/postsApi";
 import { isLoginContext } from "../contexts/IsLoginContext";
 
 export default function EditPostModal({

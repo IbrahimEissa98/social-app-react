@@ -9,7 +9,7 @@ import {
   Input,
 } from "@heroui/react";
 import PostHeader from "./postComponents/PostHeader";
-import { createPost, UpdateProfilePhotoApi } from "../services/PostsApi";
+import { createPost, UpdateProfilePhotoApi } from "../services/postsApi";
 import { isLoginContext } from "../contexts/IsLoginContext";
 import { getLoggedUserDataApi } from "../services/loginAuth";
 
