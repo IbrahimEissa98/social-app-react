@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@plugin './hero.js';
+/* Note: You may need to change the path to fit your project structure */
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .bg-move {
+    @apply bg-linear-to-br from-gray-300 dark:from-base-dark to-white dark:to-gray-500 bg-size-[300%] animate-move-bg;
+  }
+}
+
+@layer components {
+  .circle-border::before {
+    content: "";
+    display: block;
+    background: conic-gradient(hsla(197, 100%, 64%, 1) 0%, transparent 100%);
+    height: 300%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    top: -100%;
+    animation: rotateBorder 4s linear infinite;
+    z-index: 0;
+  }
+}
+@theme {
+  --color-base-dark: #222426;
+  --color-post-dark: #121212;
+  --font-segue: "Segoe UI", sans-serif;
+  --animate-rotateBorder: rotateBorder 8s linear infinite;
+  --animate-move-bg: move-bg 1.5s linear infinite;
+  @keyframes rotateBorder {
+    from {
+      transform: rotate(0);
+    }
+
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes move-bg {
+    0%,
+    100% {
+      background-position: top left;
+    }
+
+    50% {
+      background-position: bottom right;
+    }
+  }
+}
