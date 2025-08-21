@@ -7,12 +7,12 @@ import { ToastProvider } from "@heroui/toast";
 import IsLoginContextProvider from "./contexts/IsLoginContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  // <StrictMode>
-  <HeroUIProvider>
-    <ToastProvider placement="top-right" />
-    <IsLoginContextProvider>
-      <App />
-    </IsLoginContextProvider>
-  </HeroUIProvider>
-  // </StrictMode>
+  <StrictMode>
+    <HeroUIProvider>
+      <ToastProvider placement="top-right" />
+      <IsLoginContextProvider>
+        <App />
+      </IsLoginContextProvider>
+    </HeroUIProvider>
+  </StrictMode>
 );
