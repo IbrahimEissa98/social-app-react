@@ -7,7 +7,7 @@ export default function AuthLayout() {
   return (
     <>
       <div
-        className={`flex justify-center py-16 min-h-screen bg-[url(${bgImageUrl})] bg-no-repeat bg-cover`}
+        className={`auth-container flex justify-center py-16 min-h-screen bg-[url(${bgImageUrl})] bg-no-repeat bg-cover`}
       >
         <Outlet />
       </div>

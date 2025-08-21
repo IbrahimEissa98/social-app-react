@@ -14,6 +14,9 @@
   .bg-move {
     @apply bg-linear-to-br from-gray-300 dark:from-base-dark to-white dark:to-gray-500 bg-size-[300%] animate-move-bg;
   }
+  .auth-container {
+    background-image: url("/public/low-poly-grid-haikei.svg");
+  }
 }
 
 @layer components {
